@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<title>Alex Koliada | Not found</title>
+
+	<meta charset=utf-8">
+	<meta name="keywords" content="коляда, алексей, koliada, alexei, oleksii, киев, kolyada, alex" />
+	<meta name="description" content="Alexei Koliada - IT WEB MOBILE" />
+	<meta name="author" content="Alexei Koliada" />
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<meta itemprop="name" content="Alexei Kolida">
+	<meta itemprop="description" content="Alexei Koliada - IT WEB MOBILE">
+
+	<link rel="stylesheet" type="text/css" href="http://alex-koliada.com/style/style.css">
+	<link rel="shortcut icon" href="http://alex-koliada.com/images/favicon.ico">
+
+	<script type="text/javascript">
+
+		// Analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-18750158-4', 'alex-koliada.com');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<style>
+		#main {
+			color : white;
+			background : none;
+			background-color : #EB5F28;
+			border : 2px solid #B53300;
+			padding : 10px;
+		}
+
+		#main  a{
+			color : white;
+			font-weight : bold;
+		}
+
+		#header_404 {
+			font-size: 30pt;
+			color: #EDE861;
+			border-right: 2px solid #EDE861;
+			margin-right: 10px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div id="body_404">
+		<div id="header">
+			<ul class="menu">
+				<li id="title">
+					<a href="http://alex-koliada.com" title="Home">Alexei Koliada</a></li>
+				<li id="kiev">
+					Kiev</li>
+			</ul>
+		</div>
+		<div id="main">
+			<p>
+				<span id="header_404">
+					404
+				</span>
+			Ой. Эта страница на сервере отсутствует.</p><br />
+			<p>Если вы уверены, что раньше по этой ссылке что-то было, но теперь отсутствует по ошибке, <a href="mailto:alex.fiator@gmail.com" title="написать письмо">напишите мне</a>.</p><br />
+			<p>Возможно, вы просто неправильно ввели адрес.<br />Проверьте его или перейдите на <a href="http://alex-koliada.com" title="Home">Домашнюю Страницу</a>.</p>
+			<!-- Упс, вы попали не совсем туда, куда хотели? Ничего страшного</p><br />
+			<p>Скорее всего, вы пришли сюда по устаревшей ссылке. В таком случае, я попытаюсь направить вас туда, куда вы хотели попасть. Если после нажатия на ссылку вы не попадете в нужное место, вернитесь назад на эту страницу, и мы придумаем, что с этим делать.</p><br />
+			<?php
+				if($_SERVER['HTTP_REFERER'] == 'http://alex-koliada.com/versions.php' || $_SERVER['HTTP_REFERER'] == 'http://alex-koliada.pp.ua/versions.php')
+					echo "<p>Вы пришли сюда со страницы версий, да? Значит, ссылки не будет :)</p>";
+				else if($_SERVER['REQUEST_URI'] != '/404.php')
+					echo "<p>А вот и ссылка: <br /><a href='http://alex-koliada.com/blog$_SERVER[REQUEST_URI]'>http://alex-koliada.com/blog".urldecode("$_SERVER[REQUEST_URI]")."</a></p>";
+						else echo '<p style="font-size:20pt; text-align:center;" >Вы вернулись! Я соскучился :)</p>';
+			?>
+			<br />
+			<p>
+			Если вы все-таки не попали туда, куда хотели, попробуйте поискать то, что искали, в моем <a href="http://<?php echo $hostname; ?>/blog" title="Старый блог">старом блоге</a>.</p><br />
+			<p>Наконец, вы можете узнать, чем я тут занимаюсь, перейдя на <a href="http://<?php echo $hostname; ?>" title="Home">Домашнюю Страницу</a>.</p>-->
+		</div>
+	</div>
+</body>
+</html>
