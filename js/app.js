@@ -6,23 +6,20 @@
 
 	'use strict';
 
-	var content = {
-		'firetasks': 'A Google Tasks client for Mozilla\'s Firefox OS',
-		'current-occupation': '',
-		'rn2': '',
-		'rn-articles': ''
-	};
-
 	function $(v) {
 		return (v.substr(0, 1) === '#') ? document.querySelector(v) : document.querySelectorAll(v);
 	}
 
+	/**
+	 * Last tweet fetching
+	 */
 	function getLastTweet() {
 
 		var dom = {
 				content: $('.twitter-content')[0],
 				timestamp: $('.twitter-timestamp > a')[0]
 			},
+			timeout = 10000,
 			request = new XMLHttpRequest();
 
 		function normalizeDate(date) {
@@ -66,11 +63,14 @@
 		}
 
 		request.onload = onLoad;
-		request.timeout = 10000;
+		request.timeout = timeout;
 		request.ontimeout = onFail;
 		sendRequest();
 	}
 
+	/**
+	 * Binds simple event listeners
+	 */
 	function bindListeners() {
 		var cards = $('.internal'),
 			i,
