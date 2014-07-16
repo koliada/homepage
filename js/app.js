@@ -30,7 +30,7 @@
 			result += '-';
 			result += (date.getDate().length === 1) ? ('0' + (date.getDate() + 1).toString()) : date.getDate();
 			result += ' ';
-			result += date.getHours();
+			result += (date.getHours() < 10) ? ('0' + date.getHours().toString()) : date.getHours();
 			result += ':';
 			result += (date.getMinutes().length === 1) ? ('0' + (date.getMinutes() + 1).toString()) : date.getMinutes();
 			return result;
